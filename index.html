@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rebooting Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --azul: #0077b6;
+      --verde: #00b894;
+      --gris-claro: #f4f4f4;
+      --oscuro: #2d3436;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--azul), var(--verde));
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: var(--azul);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: var(--gris-claro);
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 300px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card i {
+      font-size: 2em;
+      color: var(--verde);
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      color: var(--oscuro);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .contacto a {
+      margin: 0 10px;
+      color: var(--azul);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contacto i {
+      margin-right: 8px;
+    }
+
+    .boton-wsp {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .boton-wsp:hover {
+      background-color: #1ebc58;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rebooting Solutions</h1>
+    <p>Formateo profesional y soluciones para tu equipo de cómputo</p>
+  </header>
+
+  <section class="section">
+    <h2><i class="fas fa-laptop-code"></i> Paquetes de Servicio</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-desktop"></i>
+        <h3>Paquete Básico</h3>
+        <p>✅ Formateo con Windows 11<br>
+           ✅ Actualización de drivers<br>
+           ✅ Optimización de arranque<br>
+           ✅ Limpieza física del equipo</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-laptop"></i>
+        <h3>Paquete Estándar</h3>
+        <p>✅ Incluye todo lo del Paquete 1<br>
+           ✅ Instalación de Microsoft Office (2019, 2021 o 2024)</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Paquete Premium</h3>
+        <p>✅ Incluye todo lo del Paquete 2<br>
+           ✅ Instalación y activación de antivirus por 1 año</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2><i class="fas fa-tools"></i> Servicios Extra</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-database"></i>
+        <h3>Respaldo de Información</h3>
+        <p>Precio según tamaño del respaldo.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-undo-alt"></i>
+        <h3>Recuperación de Datos</h3>
+        <p>✔️ Archivos borrados accidentalmente<br>
+           ✔️ Equipos que no encienden<br>
+           ✔️ Contraseñas olvidadas</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-chrome"></i>
+        <h3>Chrome OS Flex</h3>
+        <p>Ideal para equipos viejos o lentos no compatibles con Windows 11.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-magic"></i>
+        <h3>Optimización y Limpieza</h3>
+        <p>Mejora el rendimiento de tu equipo de forma segura.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-key"></i>
+        <h3>Activación de Software</h3>
+        <p>Activamos Windows y Office de forma legal y segura.</p>
+      </div>
+      <div class="card">
+        <i class="fab fa-youtube"></i>
+        <h3>YouTube sin Anuncios</h3>
+        <p>Navega YouTube sin interrupciones (sin ser Premium).</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Contacto</h2>
+    <div class="contacto">
+      <p><i class="fas fa-envelope"></i> rebootingsolutions@gmail.com</p>
+      <p><i class="fab fa-facebook"></i> <a href="https://facebook.com/rebootingsolutions" target="_blank">Rebooting Solutions</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/rebootingsolutions" target="_blank">@rebootingsolutions</a></p>
+      <!-- Número de teléfono se agregará cuando esté disponible -->
+      <a href="https://wa.me/5216142072055" class="boton-wsp" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
